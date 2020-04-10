@@ -1,5 +1,5 @@
 node {
 	stage('Build') {
-		sh 'mvn clean install'
+		sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean package'
 	}
 }
