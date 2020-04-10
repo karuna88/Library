@@ -1,0 +1,15 @@
+---
+applications:
+- name: library-service
+  instances: 1
+  memory: 1024M
+  random-route: true
+  buildpacks:
+  - java_buildpack
+  path: target/library-service.jar
+  services:
+  - library-db
+  env:
+   SAMPLE_ENV: sampleEnv
+  
+  

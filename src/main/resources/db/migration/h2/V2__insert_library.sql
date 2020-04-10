@@ -1,0 +1,2 @@
+INSERT INTO LIBRARY 
+		VALUES (1,'Library h2')
