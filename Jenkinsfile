@@ -1,5 +1,5 @@
 node {
 	stage('Build') {
-		sh './mvnw clean build'
+		sh 'mvn clean install'
 	}
 }
